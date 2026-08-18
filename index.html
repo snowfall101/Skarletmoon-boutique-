@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkarletMoon Boutique</title>
+  <meta name="description" content="Welcome to SkarletMoon Boutique — a little moonlit magic for your style and everyday life.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="#home" class="brand">🌙 SkarletMoon</a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <img src="images/header.png" alt="SkarletMoon Boutique moonlit banner">
+      <div class="hero-content">
+        <p class="eyebrow">WELCOME TO</p>
+        <h1>SkarletMoon Boutique</h1>
+        <p>A little moonlit magic, made with love. ✨</p>
+        <a class="button" href="#shop">Explore the Boutique</a>
+      </div>
+    </section>
+
+    <section id="shop" class="section">
+      <p class="eyebrow">SHOP</p>
+      <h2>Featured Collections</h2>
+      <p class="intro">Add your products here as your boutique grows. These cards are ready for you to customize.</p>
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon">🌙</div>
+          <h3>Moonlit Collection</h3>
+          <p>Add your favorite moon, celestial, or night-sky inspired items here.</p>
+          <a href="#contact">Ask About This</a>
+        </article>
+        <article class="card">
+          <div class="card-icon">💎</div>
+          <h3>Celestial Treasures</h3>
+          <p>Showcase your jewelry, accessories, handmade pieces, or special finds.</p>
+          <a href="#contact">Ask About This</a>
+        </article>
+        <article class="card">
+          <div class="card-icon">✨</div>
+          <h3>New & Magical</h3>
+          <p>Use this space for new arrivals, seasonal items, or limited collections.</p>
+          <a href="#contact">Ask About This</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section split">
+      <div>
+        <p class="eyebrow">ABOUT</p>
+        <h2>Welcome to my little corner of the moon.</h2>
+        <p>SkarletMoon Boutique is a space for beautiful, magical, and thoughtfully chosen things. Replace this paragraph with your own story, your mission, and what makes your boutique special.</p>
+        <p>Every piece can have its own little bit of moonlight. 🌙</p>
+      </div>
+      <img class="logo-large" src="images/logo.png" alt="SkarletMoon Boutique logo">
+    </section>
+
+    <section id="gallery" class="section">
+      <p class="eyebrow">GALLERY</p>
+      <h2>Under the SkarletMoon</h2>
+      <div class="gallery">
+        <img src="images/logo.png" alt="SkarletMoon logo">
+        <img src="images/header.png" alt="SkarletMoon celestial banner">
+      </div>
+      <p class="hint">You can add more product photos later by placing them in the <strong>images</strong> folder and adding another image tag.</p>
+    </section>
+
+    <section id="contact" class="section contact">
+      <p class="eyebrow">CONTACT</p>
+      <h2>Let's connect</h2>
+      <p>Replace the buttons below with your real social links and business email.</p>
+      <div class="contact-buttons">
+        <a class="button" href="mailto:YOUR-EMAIL@example.com">📩 Email Me</a>
+        <a class="button secondary" href="#" onclick="return false;">📱 Facebook</a>
+        <a class="button secondary" href="#" onclick="return false;">🎵 TikTok</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="images/logo.png" alt="" class="footer-logo">
+    <p>© 2026 SkarletMoon Boutique · Made with moonlight & magic 🌙✨</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', event => {
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target) {
+          event.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
